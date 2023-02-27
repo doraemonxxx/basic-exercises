@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+ul:after,
+ol:after,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+a {
+	color: #000000;
+}
+body {
+	display: block;
+	font-family: "Raleway", sans-serif;
+	/* font-family: 'Zen Tokyo Zoo', cursive; */
+	/* font-family: 'Passion One', cursive; */
+}
+
+main,
+section.main_sec {
+	width: 100%;
+	display: block;
+}
+
+section.main_sec {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+section.main_sec > h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+
+.accordion_con {
+	width: 100%;
+}
+
+.accordion_con > li {
+	width: 100%;
+	background-color: #3c4b64;
+	border: none;
+	outline: none;
+	transition: background-color 0.2s linear;
+	border: 1px solid #c1c1c1;
+}
+
+.accordion_con > li:not(:last-child) {
+	border-bottom: 0;
+}
+
+.accordion_con > li .list_title {
+	text-align: left;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 15px 20px;
+	cursor: pointer;
+}
+
+.accordion_con > li .list_title:hover,
+.accordion_con > li .list_title.is-open {
+	background-color: #446fb9;
+}
+
+.accordion_con > li .list_title::after {
+	font-family: FontAwesome;
+	content: "\f150";
+	font-family: "fontawesome";
+	font-size: 18px;
+	float: right;
+}
+
+.accordion_con > li .list_title.is-open::after {
+	content: "\f151";
+}
+
+.accordion_con > li .list_content {
+	background-color: white;
+	border-left: 1px solid whitesmoke;
+	border-right: 1px solid whitesmoke;
+	/* padding: 25px 30px; */
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-in-out;
+}
+
+.accordion_con > li .list_content p {
+	padding: 25px 30px;
+}
+
+a.link_to_exercise {
+	color: #ff6600;
+	font-size: 14px;
+	display: flex;
+}
+
+a.link_to_exercise:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+}
