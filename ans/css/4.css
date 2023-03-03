@@ -1,0 +1,108 @@
+@import url("common.css");
+
+@font-face {
+	font-family: KozGoPr6N-Regular;
+	src: url("../fonts/KozGoPr6N-Regular.otf");
+}
+
+body {
+	font-family: KozGoPr6N-Regular;
+}
+main {
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+}
+
+main > aside,
+main > section {
+	width: 50%;
+	float: left;
+}
+
+main > aside .header {
+	padding: 77px 0;
+}
+
+main > aside .header h1 {
+	text-align: center;
+	color: #d4c79a;
+	font-weight: normal;
+	letter-spacing: 2px;
+	font-size: 33px;
+	line-height: 1.5;
+}
+
+main > aside .header h1 span {
+	font-size: 24px;
+	display: block;
+}
+
+main > aside .bottom {
+	width: 100%;
+	background-image: url(../images/4/1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 202px 0 52px 0;
+}
+
+main > aside .bottom .blue_con,
+main > section .red_con {
+	padding: 30px 120px 20px 30px;
+}
+
+main > aside .bottom .blue_con {
+	color: #ffffff;
+	background-color: rgba(43, 61, 85, 0.8);
+	width: 350px;
+	/* position: absolute;
+	left: 0; */
+	/* bottom: 55px; */
+}
+
+main > aside .bottom .blue_con h2,
+.red_con h2 {
+	font-size: 26px;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+main > aside .bottom .blue_con p,
+.red_con p {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 1.5px;
+}
+
+.bottom .arrow,
+.clearfix .arrow {
+	width: 41px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+}
+
+.bottom .arrow img,
+.clearfix .arrow img {
+	display: block;
+	width: 100%;
+}
+
+main > section {
+	background-image: url(../images/4/2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 439px 0 55px 0;
+}
+
+main > section .red_con {
+	float: right;
+	background-color: rgba(187, 93, 72, 0.8);
+	width: 350px;
+	color: #ffffff;
+}
