@@ -16,12 +16,13 @@ main {
 
 main > aside,
 main > section {
-	width: 50%;
+	/* width: 50%; */
+	width: 600px;
 	float: left;
 }
 
 main > aside .header {
-	padding: 77px 0;
+	padding: 84px 0;
 }
 
 main > aside .header h1 {
@@ -97,7 +98,7 @@ main > section {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	padding: 439px 0 55px 0;
+	padding: 453px 0 55px 0;
 }
 
 main > section .red_con {
@@ -105,4 +106,7 @@ main > section .red_con {
 	background-color: rgba(187, 93, 72, 0.8);
 	width: 350px;
 	color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
 }
